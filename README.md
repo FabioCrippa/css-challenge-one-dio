@@ -1,22 +1,107 @@
 # Desafio 01: Criando sua primeira Landing Page com HTML e CSS
 
-Bem vindo(a) ao primeiro desafio da Trilha de CSS da DIO! Nela, você vai construir sua primeira Landing Page com HTML e CSS, colocando em prática os fundamentos do CSS,
-as propriedades básicas da linguagem de estilização, além de trabalhar com as unidades de medidas relativas e absolutas que aprendemos ao longo da trilha.
+## 🎯 Sobre o Projeto
 
-[Clique aqui](https://micheleambrosio.github.io/dio-trilha-css-desafio-01/) para acessar o resultado final da Landing Page criada a partir do desafio!
+Este é um projeto da **Trilha de CSS da DIO**, onde construí uma Landing Page completa utilizando apenas HTML e CSS. O desafio me permitiu aplicar conceitos fundamentais e avançados de estilização web, criando uma página responsiva e moderna.
 
-![image](https://user-images.githubusercontent.com/55519539/183538055-6cce606c-7d1d-4d15-a4be-ffeb5b37c956.png)
+## 🚀 O Que Aprendi
 
-Para você realizar o desafio, basta fazer um **fork** para o seu GitHub e começar a mexer no projeto.
-Dentro da pasta *main*, você vai encontrar todas as imagens e o arquivo HTML, contendo a estrutura básica da sua página, faltando apenas
-realizar a estilização da sua página. É necessário que você faça toda a parte responsável por interligar sua página HTML com suas folhas
-de estilo para que o resultado da estilização funcione.
+Durante o desenvolvimento desta Landing Page, adquiri conhecimentos sólidos em diversas áreas do CSS:
 
-[Link do Figma](https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=2%3A6) contendo o protótipo do desafio para
-que você possa se basear.
+### 📚 **Fundamentos CSS**
+- **Reset CSS**: Remoção de estilos padrão dos navegadores para controle total
+- **Box Model**: Compreensão de margin, padding, border e box-sizing
+- **Unidades de Medida**: Uso de rem, vh, px e porcentagens
+- **Seletores**: Classes, IDs e pseudo-elementos
 
-*Observações: para aplicar os textos em gradiente, utilize a propriedade CSS background-clip, porém, para funcionar em alguns navegadores,
-é necessário utilizar a propriedade -webkit-background-clip: text;*
+### 🎨 **Estilização Avançada**
+- **Background Images**: Aplicação de imagens de fundo responsivas
+  - `background-size: cover` para cobertura total
+  - `background-position: center` para centralização
+  - `background-repeat: no-repeat` para evitar repetição
 
-Caso tenha alguma dúvida, ou queira comparar o resultado do desafio que você fez, nós temos o site finalizado na branch *final*. Basta alterar a branch do projeto
-utilizando o comando `git checkout final` no seu terminal.
+### 🔧 **Layout com Flexbox**
+- **Display Flex**: Criação de layouts flexíveis e responsivos
+- **Align-items**: Alinhamento vertical de elementos
+- **Justify-content**: Alinhamento horizontal de elementos
+- **Flex-direction**: Organização em linha ou coluna
+
+### ✨ **Efeitos Visuais**
+- **Pseudo-elementos**: Uso de `::before` para criar overlays
+- **Text-shadow**: Aplicação de sombras em textos para melhor legibilidade
+- **Transitions**: Animações suaves em hover effects
+- **Z-index**: Controle de camadas e sobreposição de elementos
+
+### 📱 **Responsividade**
+- **Media Queries**: Adaptação para diferentes tamanhos de tela
+  - Breakpoint 768px para tablets
+  - Breakpoint 480px para dispositivos móveis
+- **Design Mobile-First**: Estratégia de desenvolvimento responsivo
+
+### 🎭 **Interatividade**
+- **Hover Effects**: Efeitos ao passar o mouse
+- **Focus States**: Melhoria de acessibilidade para navegação por teclado
+- **Smooth Scroll**: Rolagem suave na página
+
+## 🛠️ **Técnicas Implementadas**
+
+### **1. Overlay com Pseudo-elementos**
+```css
+.banner::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+```
+
+### **2. Layout Responsivo**
+```css
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+### **3. Media Queries**
+```css
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+## 📋 **Etapas de Desenvolvimento**
+
+1. **Reset CSS** - Preparação do ambiente
+2. **Background Image** - Aplicação da imagem de fundo
+3. **Layout Structure** - Definição de altura e flexbox
+4. **Overlay Creation** - Melhoria de legibilidade
+5. **Content Styling** - Estilização de textos e botões
+6. **Main Sections** - Desenvolvimento das seções principais
+7. **Footer** - Finalização do rodapé
+8. **Responsiveness** - Adaptação para dispositivos móveis
+
+## 🌟 **Principais Conceitos Aprendidos**
+
+- **Hierarquia CSS**: Especificidade e cascata
+- **Posicionamento**: Relative, absolute e z-index
+- **RGBA Colors**: Transparência e sobreposições
+- **Typography**: Tamanhos de fonte e espaçamento
+- **Performance**: Otimização de imagens e carregamento
+
+
+## 🚀 **Próximos Passos**
+
+Com este projeto, desenvolvi uma base sólida em CSS que me permitirá:
+- Criar layouts mais complexos
+- Implementar animações avançadas
+- Trabalhar com CSS Grid
+- Explorar pré-processadores como Sass
+- Desenvolver componentes reutilizáveis
+
+---
+
+**Desenvolvido como parte da Trilha de CSS da DIO** 🎓

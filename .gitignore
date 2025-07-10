@@ -1,0 +1,22 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Arquivos de configuração do editor
+.vscode/settings.json
+.idea/
+
+# Cache
+.cache/
+
+# Arquivos de backup
+*.bak
+*.backup
